@@ -6,7 +6,7 @@ function getEmail1(){
         $('#errormsg1').css('visibility','hidden');
     }else{
         $('#input1').css('border-color','hsl(0, 69%, 67%)');
-        $('#errormsg1').css('visibility','visible');
+        ($(window).width()<=480)?$('#errormsg').css('display','block'):$('#errormsg1').css('visibility','visible');
     }
 }
 function getEmail2(){
